@@ -3,7 +3,8 @@
     <div class="panel-heading">Blotter Chain decentralize ledger ... </div>
     <div class="panel-body">
       <div>
-        <input type="search" class="form-control" placeholder="Text input">
+        <input [(ngModel)]="input" type="search" class="form-control" placeholder="Text input">
+        <button [routerLink]="['search']" [queryParams]="{value: input}" name="test" class="btn btn-primary">Send</button>
       </div>
     </div>
   </div>

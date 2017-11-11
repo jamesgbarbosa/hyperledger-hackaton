@@ -4,15 +4,26 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { SearchResultsComponent } from './search/search-results/search-results.component';
+import {RouterModule, Routes} from "@angular/router";
+import {FormsModule} from "@angular/forms";
 
+
+const appRoutes : Routes = [{
+  path: 'search', component: SearchResultsComponent
+}]
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent
+    HomepageComponent,
+    SearchResultsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes),
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
