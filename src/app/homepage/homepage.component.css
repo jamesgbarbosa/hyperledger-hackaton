@@ -48,23 +48,28 @@ table {
   border-spacing: 0;
 }
 
-.title {
-  font-size: 60px;
+.bc-title {
+  font-size: 4em;
+  margin-bottom: 6px;
 }
 
 .container {
   min-height: 100%;
 }
 
-.create-complate{
-  margin-left: 838px;
+.bc-search{
+  padding-top: 30px;
 }
 
 .bc-vmiddle {
-  margin-top: 50vmin;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  margin-top: 32vmin;
+}
+
+.navbar-nav > li:hover {
+  background: #f8f8f8;
+}
+
+.navbar {
+  background-color: transparent;
+  border-color: transparent;
 }

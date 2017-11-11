@@ -7,6 +7,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { SearchResultsComponent } from './search/search-results/search-results.component';
 import {RouterModule, Routes} from "@angular/router";
 import {FormsModule} from "@angular/forms";
+import {ModalComponent} from "./modal/modal.component";
 
 
 const appRoutes : Routes = [{
@@ -17,7 +18,8 @@ const appRoutes : Routes = [{
   declarations: [
     AppComponent,
     HomepageComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

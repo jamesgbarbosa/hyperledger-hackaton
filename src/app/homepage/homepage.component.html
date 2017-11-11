@@ -1,24 +1,31 @@
 <div class="container">
+  <nav class="navbar navbar-default">
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="javascript:void(0)" (click)="clickEvent()">Create complain</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+  </nav>
 
   <header>
     <div class="bc-vmiddle">
-      <div class="title" align="center" >Blotter Chain </div>
-      <div align="center">Lorem Ipsum is simply dummy text of the printing and typesetting </div>
-      <div class="input-group">
+      <div class="bc-title" align="center" >Blotter Chain </div>
+      <div align="center">Decentralized Ledgers of Baranggay Blotter Complaints </div>
+      <div class="input-group bc-search">
         <input [(ngModel)]="input" type="search" class="form-control" placeholder="Text input">
         <div class="input-group-btn">
-            <button  [routerLink]="['search']"  [queryParams]="{value: input}" type="button" class="btn btn-default" aria-label="Left Align">
-              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            </button>
-            <button type="button" class="btn btn-default" aria-label="Left Align">
-              <span class="glyphicon glyphicon-filter" aria-hidden="true"></span>
-            </button>
+          <button  [routerLink]="['search']"  [queryParams]="{value: input}" type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-filter" aria-hidden="true"></span>
+          </button>
         </div>
       </div>
     </div>
-    </header>
+  </header>
 </div>
-
-
-
 

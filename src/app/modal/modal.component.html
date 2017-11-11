@@ -1,0 +1,97 @@
+<span class="outer-span">
+  <span class="inner-span">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" >
+
+    <h1 align="center">Create Complain</h1>
+    <div class="textarea-field">
+      <label>Complain Description:</label>
+      <textarea ngModel name="complainDescription" #complainDescription="ngModel" (change)="onSubmit(complainDescription)" class="form-control" rows="3"></textarea>
+
+    </div>
+
+    <div>
+      <div class=" col-md-6">
+        <h2 class="complain">Complainant</h2>
+        <div>
+          <div class="bc-input-field">
+            <label>Full Name:</label>
+            <input ngModel name="complainantFullName" #complainantFullName="ngModel" type="text" class="form-control">
+          </div>
+
+          <div class="bc-input-field">
+            <label>Nick Name:</label>
+            <input ngModel name="complainantNickName" #complainantNickName="ngModel" type="text" class="form-control">
+          </div>
+
+          <div class="bc-input-field">
+            <label>Address:</label>
+            <input ngModel name="complainantAddress" #complainantAddress="ngModel" type="text" class="form-control">
+          </div>
+
+          <div class="bc-input-field">
+            <label>Gender:</label>
+            <select ngModel name="complainantGender" #complainantGender="ngModel" class="form-control">
+              <option></option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+
+          </div>
+
+          <div class="bc-input-field">
+            <label>Birthdate:</label>
+            <input ngModel name="complainantBirthdate" #complainantBirthDate="ngModel" type="date" class="form-control">
+          </div>
+        </div>
+      </div>
+
+    <div>
+
+     <div class=" col-md-6">
+        <h2 class="complain">Complainee</h2>
+        <div>
+          <div class="bc-input-field">
+            <label>Full Name:</label>
+            <input ngModel name="complaineeFullName" #complaineeFullName="ngModel" type="text" class="form-control">
+          </div>
+
+          <div class="bc-input-field">
+            <label>Nick Name:</label>
+            <input ngModel name="complaineeNickName" #complaineeNickName="ngModel" type="text" class="form-control">
+          </div>
+
+          <div class="bc-input-field">
+            <label>Address:</label>
+            <input ngModel name="complaineeAddress" #complaineeAddress="ngModel" type="text" class="form-control">
+          </div>
+
+          <div class="bc-input-field">
+            <label>Gender:</label>
+            <select ngModel name="complaineeGender" #complaineeGender="ngModel" class="form-control">
+              <option></option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+
+          </div>
+
+          <div class="bc-input-field">
+            <label>Birthdate:</label>
+            <input ngModel name="complaineeBirthdate" #complaineeBirthDate="ngModel" type="date" class="form-control">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+
+    <div class="pull-right div-button">
+      <button class="bc-button" type="button" (click)="onSubmit(f)" class="btn btn-default">Submit</button>
+      <!--<button class="bc-button" (click)="clickEvent()" type="button" class="btn btn-default">Cancel</button>-->
+
+    </div>
+      </form>
+
+  </span>
+</span>

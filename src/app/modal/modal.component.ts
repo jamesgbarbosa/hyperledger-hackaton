@@ -1,13 +1,14 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import {ModalService} from "../modal.service";
+import {NgForm} from '@angular/forms'
 
 @Component({
-  selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css'],
+  selector: 'app-modal',
+  templateUrl: './modal.component.html',
+  styleUrls: ['./modal.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class HomepageComponent implements OnInit {
+export class ModalComponent implements OnInit {
 
   constructor(private modalService: ModalService) { }
 
@@ -15,7 +16,10 @@ export class HomepageComponent implements OnInit {
   }
 
   clickEvent(){
-    this.modalService.modalStatus(true);
+    this.modalService.modalStatus(false);
   }
 
+  onSubmit(e){
+    console.log(e)
+  }
 }
