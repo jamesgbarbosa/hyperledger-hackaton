@@ -1,3 +1,67 @@
-<p>
-  {{ name }}
-</p>
+<div class="container">
+  <div *ngFor="let data of results">
+    <div class="item">
+      <div
+        class="row">
+        <div class="col-md-10">
+          Complaint Description:
+          <div>
+            {{data.complaintDescription}}
+          </div>
+        </div>
+        <div class="col-md-2" style="text-align: right">
+          Status: {{data.status}}
+        </div>
+
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <div>Complainant: </div>
+            <div>Full Name:  {{data.complainant.fullName}}</div>
+            <div>Nickname: {{data.complainant.nickname}}</div>
+            <div>Address: {{data.complainant.address}}</div>
+            <div>Gender:  {{data.complainant.gender}}</div>
+            <div>Birthdate: {{data.complainant.birthdate}}</div>
+          </div>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <div>Complainee: </div>
+            <div>Full Name:  {{data.complainee.fullName}}</div>
+            <div>Nickname: {{data.complainee.nickname}}</div>
+            <div>Address: {{data.complainee.address}}</div>
+            <div>Gender:  {{data.complainee.gender}}</div>
+            <div>Birthdate: {{data.complainee.birthdate}}</div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <div>Barangay: </div>
+            <div>Officer in charge:  {{data.complainee.fullName}}</div>
+            <div>Barangay name: {{data.barangay.barangayName}}</div>
+            <div>Barangay number: {{data.barangay.barangayNumber}}</div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <br>
+
+  </div>
+
+</div>
